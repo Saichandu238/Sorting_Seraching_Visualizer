@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Algorithm Visualizer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-top: 40px;
+        color: #333;
+      }
+      .algo-button {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 8px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .algo-button.searching {
+        background-color: #2196f3;
+      }
+      .algo-button:hover {
+        background-color: #388e3c;
+      }
+      .algo-button.searching:hover {
+        background-color: #1565c0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Algorithm Visualizer</h1>
+
+    <h2>Sorting Algorithms</h2>
+    <div>
+      <a class="algo-button" href="/bubble-sort/">Bubble Sort</a>
+      <a class="algo-button" href="/selection-sort/">Selection Sort</a>
+      <a class="algo-button" href="/insertion-sort/">Insertion Sort</a>
+      <a class="algo-button" href="/merge-sort/">Merge Sort</a>
+      <a class="algo-button" href="/quick-sort/">Quick Sort</a>
+    </div>
+
+    <h2>Searching Algorithms</h2>
+    <div>
+      <a class="algo-button searching" href="/linear-search/">Linear Search</a>
+      <a class="algo-button searching" href="/binary-search/">Binary Search</a>
+    </div>
+  </body>
+</html>

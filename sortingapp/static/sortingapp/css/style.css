@@ -1,0 +1,20 @@
+/* sortingapp/static/sortingapp/css/style.css */
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    margin: 20px;
+}
+
+.bar {
+    width: 20px;
+    margin: 2px;
+    background-color: skyblue;
+}
